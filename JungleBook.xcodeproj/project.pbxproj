@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		C85C242B1E7702C000C68997 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C242A1E7702C000C68997 /* main.m */; };
 		C85C242E1E7702C000C68997 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C242D1E7702C000C68997 /* AppDelegate.m */; };
-		C85C24301E7702C000C68997 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C85C242F1E7702C000C68997 /* GameScene.sks */; };
-		C85C24321E7702C000C68997 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C85C24311E7702C000C68997 /* Actions.sks */; };
 		C85C24351E7702C000C68997 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C24341E7702C000C68997 /* GameScene.m */; };
 		C85C24381E7702C000C68997 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C24371E7702C000C68997 /* GameViewController.m */; };
 		C85C243B1E7702C000C68997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85C24391E7702C000C68997 /* Main.storyboard */; };
 		C85C243D1E7702C000C68997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85C243C1E7702C000C68997 /* Assets.xcassets */; };
 		C85C24401E7702C000C68997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85C243E1E7702C000C68997 /* LaunchScreen.storyboard */; };
+		C85C24491E7702D100C68997 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85C24481E7702D100C68997 /* SpriteKit.framework */; };
+		C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */; };
+		C8ED71911E781F0A0053EB67 /* mowgli.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71901E781F0A0053EB67 /* mowgli.atlas */; };
+		C8ED71931E7827170053EB67 /* torch.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71921E7827170053EB67 /* torch.png */; };
+		C8ED71951E7827240053EB67 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71941E7827240053EB67 /* green.png */; };
+		C8ED71981E7835600053EB67 /* Mowgli.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ED71971E7835600053EB67 /* Mowgli.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +27,6 @@
 		C85C242A1E7702C000C68997 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C85C242C1E7702C000C68997 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C85C242D1E7702C000C68997 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C85C242F1E7702C000C68997 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		C85C24311E7702C000C68997 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C85C24331E7702C000C68997 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		C85C24341E7702C000C68997 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		C85C24361E7702C000C68997 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
@@ -33,6 +35,13 @@
 		C85C243C1E7702C000C68997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C85C243F1E7702C000C68997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85C24411E7702C000C68997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85C24481E7702D100C68997 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mowglirun_spritesheet.png; sourceTree = "<group>"; };
+		C8ED71901E781F0A0053EB67 /* mowgli.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = mowgli.atlas; sourceTree = "<group>"; };
+		C8ED71921E7827170053EB67 /* torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torch.png; sourceTree = "<group>"; };
+		C8ED71941E7827240053EB67 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		C8ED71961E7835600053EB67 /* Mowgli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mowgli.h; sourceTree = "<group>"; };
+		C8ED71971E7835600053EB67 /* Mowgli.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mowgli.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85C24491E7702D100C68997 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +61,7 @@
 			children = (
 				C85C24281E7702C000C68997 /* JungleBook */,
 				C85C24271E7702C000C68997 /* Products */,
+				C85C24471E7702D100C68997 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +76,16 @@
 		C85C24281E7702C000C68997 /* JungleBook */ = {
 			isa = PBXGroup;
 			children = (
+				C8ED71901E781F0A0053EB67 /* mowgli.atlas */,
+				C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */,
+				C8ED71941E7827240053EB67 /* green.png */,
+				C8ED71921E7827170053EB67 /* torch.png */,
 				C85C242C1E7702C000C68997 /* AppDelegate.h */,
 				C85C242D1E7702C000C68997 /* AppDelegate.m */,
-				C85C242F1E7702C000C68997 /* GameScene.sks */,
-				C85C24311E7702C000C68997 /* Actions.sks */,
 				C85C24331E7702C000C68997 /* GameScene.h */,
 				C85C24341E7702C000C68997 /* GameScene.m */,
+				C8ED71961E7835600053EB67 /* Mowgli.h */,
+				C8ED71971E7835600053EB67 /* Mowgli.m */,
 				C85C24361E7702C000C68997 /* GameViewController.h */,
 				C85C24371E7702C000C68997 /* GameViewController.m */,
 				C85C24391E7702C000C68997 /* Main.storyboard */,
@@ -88,6 +103,14 @@
 				C85C242A1E7702C000C68997 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C85C24471E7702D100C68997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C85C24481E7702D100C68997 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +144,7 @@
 				TargetAttributes = {
 					C85C24251E7702C000C68997 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KNMR7F56X7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -148,11 +172,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ED71951E7827240053EB67 /* green.png in Resources */,
+				C8ED71911E781F0A0053EB67 /* mowgli.atlas in Resources */,
+				C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */,
 				C85C243B1E7702C000C68997 /* Main.storyboard in Resources */,
-				C85C24301E7702C000C68997 /* GameScene.sks in Resources */,
 				C85C243D1E7702C000C68997 /* Assets.xcassets in Resources */,
+				C8ED71931E7827170053EB67 /* torch.png in Resources */,
 				C85C24401E7702C000C68997 /* LaunchScreen.storyboard in Resources */,
-				C85C24321E7702C000C68997 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +193,7 @@
 				C85C242E1E7702C000C68997 /* AppDelegate.m in Sources */,
 				C85C24351E7702C000C68997 /* GameScene.m in Sources */,
 				C85C242B1E7702C000C68997 /* main.m in Sources */,
+				C8ED71981E7835600053EB67 /* Mowgli.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KNMR7F56X7;
 				INFOPLIST_FILE = JungleBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.JungleBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KNMR7F56X7;
 				INFOPLIST_FILE = JungleBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.JungleBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,6 +352,7 @@
 				C85C24461E7702C000C68997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

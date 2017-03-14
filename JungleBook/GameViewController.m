@@ -11,22 +11,9 @@
 
 @implementation GameViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-
-    // Load the SKScene from 'GameScene.sks'
-    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
-    
-    // Set the scale mode to scale to fit the window
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    SKView *skView = (SKView *)self.view;
-    
-    // Present the scene
-    [skView presentScene:scene];
-    
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
 }
 
 - (BOOL)shouldAutorotate {
@@ -38,6 +25,26 @@
         return UIInterfaceOrientationMaskAllButUpsideDown;
     } else {
         return UIInterfaceOrientationMaskAll;
+    }
+}
+
+
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    //Configure the View
+    SKView *gameView = (SKView *) self.view;
+    gameView.showsDrawCount = YES;
+    gameView.showsNodeCount = YES;
+    gameView.showsFPS = YES;
+    
+    if(!gameView.scene){
+        //Create and configure the scene
+        SKScene *game = [GameScene sceneWithSize:gameView.bounds.size];
+        game.scaleMode = SKSceneScaleModeAspectFill;
+    
+        //Present the Scene
+        [gameView presentScene: game];
     }
 }
 

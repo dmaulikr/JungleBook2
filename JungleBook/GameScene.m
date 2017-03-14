@@ -7,76 +7,80 @@
 //
 
 #import "GameScene.h"
+#import "Mowgli.h"
+
+@interface GameScene()
+
+@end
 
 @implementation GameScene {
-    SKShapeNode *_spinnyNode;
-    SKLabelNode *_label;
-}
-
-- (void)didMoveToView:(SKView *)view {
-    // Setup your scene here
+    Mowgli *mowgli;
+    SKNode *world;
     
-    // Get label node from scene and store it for use later
-    _label = (SKLabelNode *)[self childNodeWithName:@"//helloLabel"];
+}
+
+-(id)initWithSize:(CGSize)size {
+    if(self = [super initWithSize:size]) {
+        self.anchorPoint = CGPointMake(0.5, 0.5);
+        self.backgroundColor = [SKColor colorWithRed:0.5 green:0.9 blue:0.9 alpha:1.0];
+        
+        //Attaching World
+        world = [SKNode node];
+        [self addChild: world];
+        
+        //Making Ground
+        SKSpriteNode *ground = [SKSpriteNode spriteNodeWithImageNamed:@"torch"];
+        
+        ground.size = CGSizeMake(size.width, 50);
+        ground.position = CGPointMake(0, -self.frame.size.height/2 + ground.frame.size.height/2);
+        
+        ground.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ground.size];
+        ground.physicsBody.dynamic = NO;
+        
+        SKSpriteNode *grass = [SKSpriteNode spriteNodeWithImageNamed:@"green"];
+        
+        grass.size = CGSizeMake(size.width, 15);
+        
+        grass.position = CGPointMake(0, -self.frame.size.height/2+grass.frame.size.height/2 + 50);
+        
+        grass.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize: grass.frame.size];
+        grass.physicsBody.dynamic = NO;
+        
+        //Add to World
+        [world addChild:ground];
+        
+        [world addChild:grass];
+        
+        mowgli = [Mowgli mowgli];
+        [world addChild:mowgli];
+    }
+    return self;
+}
+
+-(void)didSimulatePhysics
+{
+   [self centerOnNode:mowgli];
+}
+
+-(void)centerOnNode:(SKNode *)node
+{
+    CGPoint positionInScene = [self convertPoint:node.position fromNode:node.parent];
+    world.position = CGPointMake(world.position.x - positionInScene.x, world.position.y);
+}
+
+-(void) addGround:(CGSize)size {
+
+}
+
+-(void) addGrass:(CGSize)size {
+
+}
+
+
+-(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [mowgli jump];
     
-    _label.alpha = 0.0;
-    [_label runAction:[SKAction fadeInWithDuration:2.0]];
-    
-    CGFloat w = (self.size.width + self.size.height) * 0.05;
-    
-    // Create shape node to use during mouse interaction
-    _spinnyNode = [SKShapeNode shapeNodeWithRectOfSize:CGSizeMake(w, w) cornerRadius:w * 0.3];
-    _spinnyNode.lineWidth = 2.5;
-    
-    [_spinnyNode runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:M_PI duration:1]]];
-    [_spinnyNode runAction:[SKAction sequence:@[
-                                                [SKAction waitForDuration:0.5],
-                                                [SKAction fadeOutWithDuration:0.5],
-                                                [SKAction removeFromParent],
-                                                ]]];
 }
 
-
-- (void)touchDownAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor greenColor];
-    [self addChild:n];
-}
-
-- (void)touchMovedToPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor blueColor];
-    [self addChild:n];
-}
-
-- (void)touchUpAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor redColor];
-    [self addChild:n];
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    // Run 'Pulse' action from 'Actions.sks'
-    [_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
-    
-    for (UITouch *t in touches) {[self touchDownAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    for (UITouch *t in touches) {[self touchMovedToPoint:[t locationInNode:self]];}
-}
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
-}
-
-
--(void)update:(CFTimeInterval)currentTime {
-    // Called before each frame is rendered
-}
 
 @end
