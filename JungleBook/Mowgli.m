@@ -8,7 +8,17 @@
 
 #import "Mowgli.h"
 
+@interface Mowgli()
+@property BOOL canJump;
+@property int jumpLimit;
+
+@end
+
 @implementation Mowgli
+
+static const uint32_t mowgliCategory = 0x1 <<0;
+static const uint32_t obstacleCategory = 0x1 <<1;
+static const uint32_t groundCategory = 0x1 <<2;
 
 + (id)mowgli
 {
@@ -19,6 +29,9 @@
    // mowgli.position = CGPointMake(0, mowgli.size.height/2 + 52);
     
     mowgli.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:mowgli.size];
+    mowgli.physicsBody.allowsRotation = NO;
+    mowgli.physicsBody.categoryBitMask = mowgliCategory;
+    mowgli.physicsBody.contactTestBitMask = obstacleCategory | ~groundCategory;
     
     //reference atlas
     SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"mowgli"];
@@ -36,21 +49,32 @@
         SKTexture *texture = [atlas textureNamed:filename];
         [mowgliTextures addObject:texture];
     }
-    SKAction *step = [SKAction moveByX:40 y:0 duration:0.2];
-    //SKAction *moveRight = [SKAction repeatActionForever:step];
+   
     SKAction *run =[SKAction animateWithTextures:mowgliTextures timePerFrame:0.05];
     SKAction *repeater = [SKAction repeatActionForever:run];
-
-    SKAction *actions = [SKAction group:@[repeater,
-                                             moveRight]];
-    
-    [mowgli runAction:actions];
+    [mowgli runAction:repeater];
 
     return mowgli;
 }
 
 -(void)jump{
-    [self.physicsBody applyImpulse:CGVectorMake(0, 150)];
+    if(self.jumpLimit < 2){
+        self.jumpLimit +=1;
+        [self.physicsBody applyImpulse:CGVectorMake(0, 150)];
+    }
+    else if(self.position.y <= -61){
+        self.jumpLimit =0;
+    }
 }
 
+-(void)start
+{
+    SKAction *stepRight = [SKAction moveByX:1.0 y:0 duration:0.004];
+    SKAction *moveRight = [SKAction repeatActionForever:stepRight];
+    [self runAction:moveRight];
+}
+
+-(void)stop{
+    [self removeAllActions];
+}
 @end

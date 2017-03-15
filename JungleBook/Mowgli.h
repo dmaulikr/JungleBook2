@@ -11,4 +11,6 @@
 @interface Mowgli : SKSpriteNode
 +(id)mowgli;
 -(void)jump;
+-(void)start;
+-(void)stop;
 @end
