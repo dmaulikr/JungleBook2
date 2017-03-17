@@ -13,4 +13,5 @@
 -(void)jump;
 -(void)start;
 -(void)stop;
+-(void)land;
 @end

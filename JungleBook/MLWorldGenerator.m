@@ -71,43 +71,47 @@ static const uint32_t groundCategory = 0x1 <<2;
     
     //SKSpriteNode *obstacle = [SKSpriteNode spriteNodeWithImageNamed:@"stone"];
     SKSpriteNode *obstacle = [self getRandomObstacle];
-    obstacle.size= CGSizeMake(40, 50);
     obstacle.name = @"obstacle";
     obstacle.position = CGPointMake(self.currentObstacleX, ground.position.y + ground.frame.size.height/2 +grass.frame.size.height  +obstacle.size.height/2 - 10);
-    obstacle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:obstacle.size];
+    obstacle.physicsBody = [SKPhysicsBody bodyWithTexture: obstacle.texture size: obstacle.texture.size];
     obstacle.physicsBody.dynamic = NO;
     obstacle.physicsBody.categoryBitMask = obstacleCategory;
     
     
     [self.world addChild: obstacle];
     
-    self.currentObstacleX += 350;
+    
+    self.currentObstacleX += arc4random_uniform(400) +400;
     
 }
 
 -(SKSpriteNode *)getRandomObstacle
 {
-    int rand = arc4random() % 6;
+    int rand = arc4random_uniform(2);
+    SKTexture *stump =[SKTexture textureWithImageNamed:@"stump"];
+    SKTexture *stone =[SKTexture textureWithImageNamed:@"stone"];
+
     
     SKSpriteNode *randObstacle;
     switch(rand) {
         case 0:
-            randObstacle = [SKSpriteNode spriteNodeWithImageNamed:@"stone"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stump];
             break;
         case 1:
-            randObstacle =[SKSpriteNode spriteNodeWithImageNamed:@"stump"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stone];
             break;
         case 2:
-            randObstacle =[SKSpriteNode spriteNodeWithImageNamed:@"stone"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stump];
             break;
         case 3:
-            randObstacle =[SKSpriteNode spriteNodeWithImageNamed:@"stump"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stone ];
             break;
         case 4:
-            randObstacle =[SKSpriteNode spriteNodeWithImageNamed:@"stump"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stump];
             break;
         case 5:
-            randObstacle =[SKSpriteNode spriteNodeWithImageNamed:@"stone"];
+            randObstacle =[SKSpriteNode spriteNodeWithTexture: stone];
+
             break;
         default:
             break;
@@ -115,5 +119,9 @@ static const uint32_t groundCategory = 0x1 <<2;
     return randObstacle;
 }
 
+
+-(void)createTextures
+{
+}
 
 @end

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "638F3117E49425D4103F767067357926AD23E930",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "638F3117E49425D4103F767067357926AD23E930" : 9223372036854775807,
+    "5A0259DE4FB7D7316DB1C63D9A76186DAAE207E6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "52AAD5A1-C64F-402D-8ECA-91804D88834E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "638F3117E49425D4103F767067357926AD23E930" : "JungleBook\/",
+    "5A0259DE4FB7D7316DB1C63D9A76186DAAE207E6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JungleBook",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JungleBook.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jkimmeyer\/JungleBook.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5A0259DE4FB7D7316DB1C63D9A76186DAAE207E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jkimmeyer\/JungleBook2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "638F3117E49425D4103F767067357926AD23E930"
+    }
+  ]
+}

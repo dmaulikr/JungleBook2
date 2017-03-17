@@ -11,6 +11,7 @@
 #import "MLWorldGenerator.h"
 #import "MLPointLabel.h"
 #import "GameData.h"
+#import "MenuScene.h"
 
 
 @interface GameScene()
@@ -84,6 +85,7 @@ static NSString *GAME_FONT = @"AmericanTypewriter-Bold";
     bestLabel.fontSize= 16.0;
     bestLabel.position = CGPointMake(-38, 0);
     [highscoreLabel addChild:bestLabel];
+    
 }
 
 -(void)didSimulatePhysics
@@ -182,6 +184,16 @@ static NSString *GAME_FONT = @"AmericanTypewriter-Bold";
     tapToResetLabel.fontSize = 20.0;
     [self addChild:tapToResetLabel];
     [self animateWithPulse:tapToResetLabel];
+    
+    SKLabelNode *tapToMenuLabel = [SKLabelNode labelNodeWithFontNamed:GAME_FONT];
+    tapToMenuLabel.name = @"tapToMenuLabel";
+    tapToMenuLabel.text = @"Menu";
+    tapToMenuLabel.fontSize = 30.0;
+    tapToMenuLabel.position = CGPointMake(-150, 150);
+    [self addChild:tapToMenuLabel];
+    
+    
+    [self updateHighscore];
 }
 
 
@@ -189,9 +201,9 @@ static NSString *GAME_FONT = @"AmericanTypewriter-Bold";
 {
     MLPointLabel *pointsLabel = (MLPointLabel *) [self childNodeWithName:@"pointsLabel"];
     MLPointLabel *highscoreLabel = (MLPointLabel *) [self childNodeWithName:@"highscoreLabel"];
+
     if(pointsLabel.number > highscoreLabel.number){
-        [highscoreLabel setPoints:pointsLabel.number];
-        
+        [highscoreLabel setPoints: pointsLabel.number];
         GameData *data = [GameData data];
         data.highscore = pointsLabel.number;
         [data save];
@@ -199,9 +211,18 @@ static NSString *GAME_FONT = @"AmericanTypewriter-Bold";
 }
 
 -(void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    SKNode *node = [self nodeAtPoint:location];
     
     if(!self.isStarted)
         [self start];
+    else if([node.name isEqualToString:@"tapToMenuLabel"]){
+        MenuScene *menuScene = [[MenuScene alloc] initWithSize:self.size];
+        SKTransition *transition = [SKTransition doorsCloseHorizontalWithDuration:1.5];
+        [self.view presentScene:menuScene transition:transition];
+
+    }
     else if (self.isGameOver)
         [self clear];
     else
@@ -211,7 +232,11 @@ static NSString *GAME_FONT = @"AmericanTypewriter-Bold";
 
 -(void)didBeginContact:(SKPhysicsContact *)contact
 {
-    [self gameOver];
+    if([contact.bodyA.node.name isEqualToString: @"ground"] || [contact.bodyB.node.name isEqualToString: @"ground"]){
+        [mowgli land];
+    }else {
+        [self gameOver];
+    }
 }
 
 -(void)animateWithPulse:(SKNode *)node

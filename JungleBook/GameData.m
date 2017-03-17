@@ -18,22 +18,22 @@
 {
     GameData *data = [GameData new];
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *fileName = @"archive.data";
+    NSString *fileName = @"/mowglirun.data";
     data.filePath = [path stringByAppendingString:fileName];
     return data;
 }
 
 -(void)save
 {
-    NSNumber *highscoreObject = [NSNumber numberWithInt:self.highscore];
+    NSNumber *highscoreObject = [NSNumber numberWithInteger:self.highscore];
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:highscoreObject];
     [data writeToFile:self.filePath atomically:YES];
 }
 
 -(void)load
 {
-    NSData *data = [NSData dataWithContentsOfFile:self.filePath];
-    NSNumber *highscoreObject = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSData *data2 = [NSData dataWithContentsOfFile:self.filePath];
+    NSNumber *highscoreObject = [NSKeyedUnarchiver unarchiveObjectWithData:data2];
     self.highscore = highscoreObject.intValue;
 }
 

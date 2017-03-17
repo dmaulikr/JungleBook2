@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "MenuScene.h"
 
 @implementation GameViewController
 
@@ -33,18 +34,16 @@
 {
     [super viewWillLayoutSubviews];
     //Configure the View
-    SKView *gameView = (SKView *) self.view;
-    gameView.showsDrawCount = YES;
-    gameView.showsNodeCount = YES;
-    gameView.showsFPS = YES;
+    SKView *menuView = (SKView *) self.view;
+
     
-    if(!gameView.scene){
+    if(!menuView.scene){
         //Create and configure the scene
-        SKScene *game = [GameScene sceneWithSize:gameView.bounds.size];
-        game.scaleMode = SKSceneScaleModeAspectFill;
+        SKScene *menu  = [MenuScene sceneWithSize:menuView.bounds.size];
+        menu.scaleMode = SKSceneScaleModeAspectFill;
     
         //Present the Scene
-        [gameView presentScene: game];
+        [menuView presentScene: menu];
     }
 }
 
