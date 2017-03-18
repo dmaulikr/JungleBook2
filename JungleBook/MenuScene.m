@@ -23,20 +23,26 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         self.anchorPoint = CGPointMake(0.5, 0.5);
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-        SKSpriteNode *playButton = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(120, 60)];
-        playButton.position = CGPointMake(0,0);
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"background.jpg"];
+        background.position = CGPointMake(0,0);
+        [self addChild:background];
+
+        SKSpriteNode *playButton =[SKSpriteNode spriteNodeWithImageNamed:@"play_button"];
+        playButton.size = CGSizeMake(230, 63.702);
+        playButton.position = CGPointMake(0,-20);
         playButton.name = @"playButton";
         [self addChild:playButton];
         
-        SKSpriteNode *levelButton = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(120, 60)];
-        levelButton.position = CGPointMake(-150, 0);
+        SKSpriteNode *levelButton = [SKSpriteNode spriteNodeWithImageNamed:@"difficulty_button"];
+        levelButton.size = CGSizeMake(230, 63.702);
+        levelButton.position = CGPointMake(-150, -100);
         levelButton.name = @"levelButton";
         [self addChild:levelButton];
         
-        SKSpriteNode *highscoreButton = [SKSpriteNode spriteNodeWithColor:[SKColor blueColor] size:CGSizeMake(120, 60)];
-        highscoreButton.position = CGPointMake(150, 0);
+        SKSpriteNode *highscoreButton = [SKSpriteNode spriteNodeWithImageNamed:@"highscore_button"];
+        highscoreButton.size = CGSizeMake(230, 63.702);
+        highscoreButton.position = CGPointMake(150, -100);
         highscoreButton.name = @"highscoreButton";
         [self addChild:highscoreButton];
         
@@ -44,6 +50,10 @@
         title.position = CGPointMake(0, 130);
         title.fontSize = 42.0;
         [self addChild:title];
+        
+        SKAction *repeater = [SKAction repeatActionForever:[SKAction playSoundFileNamed:@"rainforest.caf" waitForCompletion:YES]];
+        [self runAction:repeater];
+
         
 
     }

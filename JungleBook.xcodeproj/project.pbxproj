@@ -18,6 +18,13 @@
 		C85C243D1E7702C000C68997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85C243C1E7702C000C68997 /* Assets.xcassets */; };
 		C85C24401E7702C000C68997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85C243E1E7702C000C68997 /* LaunchScreen.storyboard */; };
 		C85C24491E7702D100C68997 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C85C24481E7702D100C68997 /* SpriteKit.framework */; };
+		C8951AF71E7D96FB00CE0A5F /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C8951AF61E7D96FB00CE0A5F /* play_button.png */; };
+		C8951AF91E7D973B00CE0A5F /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C8951AF81E7D973B00CE0A5F /* back_button.png */; };
+		C8951AFB1E7D974300CE0A5F /* highscore_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C8951AFA1E7D974300CE0A5F /* highscore_button.png */; };
+		C8951AFD1E7D975000CE0A5F /* difficulty_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C8951AFC1E7D975000CE0A5F /* difficulty_button.png */; };
+		C8951B011E7D9C1300CE0A5F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8951B001E7D9C1300CE0A5F /* background.jpg */; };
+		C8951B031E7D9C7900CE0A5F /* africanjgl.caf in Resources */ = {isa = PBXBuildFile; fileRef = C8951B021E7D9C7900CE0A5F /* africanjgl.caf */; };
+		C8951B051E7D9C8900CE0A5F /* rainforest.caf in Resources */ = {isa = PBXBuildFile; fileRef = C8951B041E7D9C8900CE0A5F /* rainforest.caf */; };
 		C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */; };
 		C8A986691E7BFA84005BA02B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A986681E7BFA84005BA02B /* MenuScene.m */; };
 		C8DFA9CC1E7C07C10056B9C4 /* LevelMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = C8DFA9CB1E7C07C00056B9C4 /* LevelMenu.sks */; };
@@ -52,6 +59,13 @@
 		C85C243F1E7702C000C68997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85C24411E7702C000C68997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85C24481E7702D100C68997 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		C8951AF61E7D96FB00CE0A5F /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
+		C8951AF81E7D973B00CE0A5F /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
+		C8951AFA1E7D974300CE0A5F /* highscore_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highscore_button.png; sourceTree = "<group>"; };
+		C8951AFC1E7D975000CE0A5F /* difficulty_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = difficulty_button.png; sourceTree = "<group>"; };
+		C8951B001E7D9C1300CE0A5F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		C8951B021E7D9C7900CE0A5F /* africanjgl.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = africanjgl.caf; sourceTree = "<group>"; };
+		C8951B041E7D9C8900CE0A5F /* rainforest.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rainforest.caf; sourceTree = "<group>"; };
 		C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mowglirun_spritesheet.png; sourceTree = "<group>"; };
 		C8A986671E7BFA84005BA02B /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		C8A986681E7BFA84005BA02B /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
@@ -107,6 +121,13 @@
 				C8ED71941E7827240053EB67 /* green.png */,
 				C8E41D231E7C2A940000A3AD /* stone.png */,
 				C8E41D1F1E7C2A610000A3AD /* stump.png */,
+				C8951AFA1E7D974300CE0A5F /* highscore_button.png */,
+				C8951AF61E7D96FB00CE0A5F /* play_button.png */,
+				C8951AF81E7D973B00CE0A5F /* back_button.png */,
+				C8951AFC1E7D975000CE0A5F /* difficulty_button.png */,
+				C8951B001E7D9C1300CE0A5F /* background.jpg */,
+				C8951B021E7D9C7900CE0A5F /* africanjgl.caf */,
+				C8951B041E7D9C8900CE0A5F /* rainforest.caf */,
 				C8ED71921E7827170053EB67 /* torch.png */,
 				C85C242C1E7702C000C68997 /* AppDelegate.h */,
 				C85C242D1E7702C000C68997 /* AppDelegate.m */,
@@ -216,11 +237,18 @@
 			files = (
 				C8ED71951E7827240053EB67 /* green.png in Resources */,
 				C8E41D201E7C2A610000A3AD /* stump.png in Resources */,
+				C8951AFB1E7D974300CE0A5F /* highscore_button.png in Resources */,
+				C8951B051E7D9C8900CE0A5F /* rainforest.caf in Resources */,
+				C8951B011E7D9C1300CE0A5F /* background.jpg in Resources */,
 				C8ED71911E781F0A0053EB67 /* mowgli.atlas in Resources */,
+				C8951B031E7D9C7900CE0A5F /* africanjgl.caf in Resources */,
+				C8951AFD1E7D975000CE0A5F /* difficulty_button.png in Resources */,
 				C8E41D241E7C2A940000A3AD /* stone.png in Resources */,
 				C8DFA9CC1E7C07C10056B9C4 /* LevelMenu.sks in Resources */,
+				C8951AF91E7D973B00CE0A5F /* back_button.png in Resources */,
 				C8DFA9FB1E7C0C470056B9C4 /* ScoresMenu.sks in Resources */,
 				C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */,
+				C8951AF71E7D96FB00CE0A5F /* play_button.png in Resources */,
 				C85C243B1E7702C000C68997 /* Main.storyboard in Resources */,
 				C85C243D1E7702C000C68997 /* Assets.xcassets in Resources */,
 				C8ED71931E7827170053EB67 /* torch.png in Resources */,
