@@ -9,6 +9,7 @@
 #import "GameViewController.h"
 #import "GameScene.h"
 #import "MenuScene.h"
+#import "LevelScene.h"
 
 @implementation GameViewController
 
@@ -36,6 +37,7 @@
     //Configure the View
     SKView *menuView = (SKView *) self.view;
 
+  
     
     if(!menuView.scene){
         //Create and configure the scene

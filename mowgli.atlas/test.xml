@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+    <bodies numBodies="33">
+
+        <body name="mowgli_0000" dynamic="true" numFixtures="2">
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="-220.5000" y="102.0000" />
+
+                    <vertex x="-20.5000" y="-312.0000" />
+
+                    <vertex x="84.5000" y="221.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+            <fixture
+                density="2"
+                friction="0"
+                restitution="0"
+                filter_categoryBits="1"
+                filter_groupIndex="0"
+                filter_maskBits="65535"
+                isSensor="false"
+                type="POLYGON"
+                numPolygons="1"
+                >
+
+
+                <polygon numVertexes="3">
+
+                    <vertex x="84.5000" y="218.0000" />
+
+                    <vertex x="-21.5000" y="-308.0000" />
+
+                    <vertex x="209.5000" y="-114.0000" />
+
+                </polygon>
+
+
+            </fixture>
+
+        </body>
+
+        <body name="mowgli_0001" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0002" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0003" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0004" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0005" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0006" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0007" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0008" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0009" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0010" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0011" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0012" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0013" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0014" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0015" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0016" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0017" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0018" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0019" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0020" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0021" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0022" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0023" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0024" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0025" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0026" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0027" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0028" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0029" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0030" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0031" dynamic="true" numFixtures="0">
+
+        </body>
+
+        <body name="mowgli_0032" dynamic="true" numFixtures="0">
+
+        </body>
+
+    </bodies>
+    <metadata>
+        <format>1</format>
+        <ptm_ratio></ptm_ratio>
+    </metadata>
+</bodydef>

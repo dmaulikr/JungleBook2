@@ -10,6 +10,6 @@
 
 @interface MLWorldGenerator : SKNode
 +(id)generatorWithWorld:(SKNode *) world;
--(void)populate;
 -(void)generate;
+-(void)populate;
 @end

@@ -51,7 +51,7 @@
         title.fontSize = 42.0;
         [self addChild:title];
         
-        SKAction *repeater = [SKAction repeatActionForever:[SKAction playSoundFileNamed:@"rainforest.caf" waitForCompletion:YES]];
+        SKAction *repeater = [SKAction repeatActionForever:[SKAction playSoundFileNamed:@"africanjgl.caf" waitForCompletion:YES]];
         [self runAction:repeater];
 
         

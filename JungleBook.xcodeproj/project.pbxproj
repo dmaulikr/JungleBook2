@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0147901E8BF0BF0022217C /* hard_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0147891E8BF0BF0022217C /* hard_button.png */; };
+		8F0147911E8BF0BF0022217C /* medium_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F01478A1E8BF0BF0022217C /* medium_button.png */; };
+		8F0147921E8BF0BF0022217C /* Easy_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F01478B1E8BF0BF0022217C /* Easy_Button.png */; };
+		8F0147931E8BF0BF0022217C /* reset_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F01478C1E8BF0BF0022217C /* reset_button.png */; };
+		8F0147991E8C181A0022217C /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0147981E8C181A0022217C /* ground.png */; };
+		8F01479B1E8C1B700022217C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F01479A1E8C1B700022217C /* background.png */; };
+		8F01479F1E8C1B880022217C /* jump.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F01479D1E8C1B880022217C /* jump.png */; };
+		8F0147A51E8C64D60022217C /* snake.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8F0147A41E8C64D60022217C /* snake.atlas */; };
+		8F50F0311E81C84100879B0A /* ShereKhan.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F50F0301E81C84100879B0A /* ShereKhan.m */; };
+		8F6312231E81C8F60011C767 /* sherekhan.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8F6312221E81C8F60011C767 /* sherekhan.atlas */; };
+		8F680BF91E850356006C85E7 /* MyTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8F680BF81E850356006C85E7 /* MyTileSet.sks */; };
 		C80094B11E794DE300E12968 /* MLWorldGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C80094B01E794DE300E12968 /* MLWorldGenerator.m */; };
 		C80094B81E7964CE00E12968 /* MLPointLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C80094B71E7964CE00E12968 /* MLPointLabel.m */; };
 		C816E22F1E798CAC0062DD8F /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = C816E22E1E798CAC0062DD8F /* GameData.m */; };
@@ -24,8 +35,6 @@
 		C8951AFD1E7D975000CE0A5F /* difficulty_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C8951AFC1E7D975000CE0A5F /* difficulty_button.png */; };
 		C8951B011E7D9C1300CE0A5F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8951B001E7D9C1300CE0A5F /* background.jpg */; };
 		C8951B031E7D9C7900CE0A5F /* africanjgl.caf in Resources */ = {isa = PBXBuildFile; fileRef = C8951B021E7D9C7900CE0A5F /* africanjgl.caf */; };
-		C8951B051E7D9C8900CE0A5F /* rainforest.caf in Resources */ = {isa = PBXBuildFile; fileRef = C8951B041E7D9C8900CE0A5F /* rainforest.caf */; };
-		C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */ = {isa = PBXBuildFile; fileRef = C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */; };
 		C8A986691E7BFA84005BA02B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A986681E7BFA84005BA02B /* MenuScene.m */; };
 		C8DFA9CC1E7C07C10056B9C4 /* LevelMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = C8DFA9CB1E7C07C00056B9C4 /* LevelMenu.sks */; };
 		C8DFA9CF1E7C09320056B9C4 /* LevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DFA9CE1E7C09320056B9C4 /* LevelScene.m */; };
@@ -34,12 +43,22 @@
 		C8E41D201E7C2A610000A3AD /* stump.png in Resources */ = {isa = PBXBuildFile; fileRef = C8E41D1F1E7C2A610000A3AD /* stump.png */; };
 		C8E41D241E7C2A940000A3AD /* stone.png in Resources */ = {isa = PBXBuildFile; fileRef = C8E41D231E7C2A940000A3AD /* stone.png */; };
 		C8ED71911E781F0A0053EB67 /* mowgli.atlas in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71901E781F0A0053EB67 /* mowgli.atlas */; };
-		C8ED71931E7827170053EB67 /* torch.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71921E7827170053EB67 /* torch.png */; };
-		C8ED71951E7827240053EB67 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C8ED71941E7827240053EB67 /* green.png */; };
 		C8ED71981E7835600053EB67 /* Mowgli.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ED71971E7835600053EB67 /* Mowgli.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0147891E8BF0BF0022217C /* hard_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hard_button.png; sourceTree = "<group>"; };
+		8F01478A1E8BF0BF0022217C /* medium_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_button.png; sourceTree = "<group>"; };
+		8F01478B1E8BF0BF0022217C /* Easy_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Easy_Button.png; sourceTree = "<group>"; };
+		8F01478C1E8BF0BF0022217C /* reset_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset_button.png; sourceTree = "<group>"; };
+		8F0147981E8C181A0022217C /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		8F01479A1E8C1B700022217C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		8F01479D1E8C1B880022217C /* jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jump.png; sourceTree = "<group>"; };
+		8F0147A41E8C64D60022217C /* snake.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = snake.atlas; sourceTree = "<group>"; };
+		8F50F02F1E81C84100879B0A /* ShereKhan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShereKhan.h; sourceTree = "<group>"; };
+		8F50F0301E81C84100879B0A /* ShereKhan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShereKhan.m; sourceTree = "<group>"; };
+		8F6312221E81C8F60011C767 /* sherekhan.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = sherekhan.atlas; path = "../../../../Desktop/Neuer Ordner 2/yxcyxc/sherekhan.atlas"; sourceTree = "<group>"; };
+		8F680BF81E850356006C85E7 /* MyTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyTileSet.sks; sourceTree = "<group>"; };
 		C80094AF1E794DE300E12968 /* MLWorldGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLWorldGenerator.h; sourceTree = "<group>"; };
 		C80094B01E794DE300E12968 /* MLWorldGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLWorldGenerator.m; sourceTree = "<group>"; };
 		C80094B61E7964CE00E12968 /* MLPointLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPointLabel.h; sourceTree = "<group>"; };
@@ -65,8 +84,6 @@
 		C8951AFC1E7D975000CE0A5F /* difficulty_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = difficulty_button.png; sourceTree = "<group>"; };
 		C8951B001E7D9C1300CE0A5F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		C8951B021E7D9C7900CE0A5F /* africanjgl.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = africanjgl.caf; sourceTree = "<group>"; };
-		C8951B041E7D9C8900CE0A5F /* rainforest.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rainforest.caf; sourceTree = "<group>"; };
-		C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mowglirun_spritesheet.png; sourceTree = "<group>"; };
 		C8A986671E7BFA84005BA02B /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		C8A986681E7BFA84005BA02B /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 		C8DFA9CB1E7C07C00056B9C4 /* LevelMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelMenu.sks; sourceTree = "<group>"; };
@@ -78,8 +95,6 @@
 		C8E41D1F1E7C2A610000A3AD /* stump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stump.png; sourceTree = "<group>"; };
 		C8E41D231E7C2A940000A3AD /* stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stone.png; sourceTree = "<group>"; };
 		C8ED71901E781F0A0053EB67 /* mowgli.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = mowgli.atlas; sourceTree = "<group>"; };
-		C8ED71921E7827170053EB67 /* torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torch.png; sourceTree = "<group>"; };
-		C8ED71941E7827240053EB67 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		C8ED71961E7835600053EB67 /* Mowgli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mowgli.h; sourceTree = "<group>"; };
 		C8ED71971E7835600053EB67 /* Mowgli.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mowgli.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,18 +132,22 @@
 			isa = PBXGroup;
 			children = (
 				C8ED71901E781F0A0053EB67 /* mowgli.atlas */,
-				C89A27321E77F3710087C290 /* mowglirun_spritesheet.png */,
-				C8ED71941E7827240053EB67 /* green.png */,
+				8F6312221E81C8F60011C767 /* sherekhan.atlas */,
 				C8E41D231E7C2A940000A3AD /* stone.png */,
 				C8E41D1F1E7C2A610000A3AD /* stump.png */,
 				C8951AFA1E7D974300CE0A5F /* highscore_button.png */,
+				8F0147981E8C181A0022217C /* ground.png */,
+				8F0147A41E8C64D60022217C /* snake.atlas */,
 				C8951AF61E7D96FB00CE0A5F /* play_button.png */,
 				C8951AF81E7D973B00CE0A5F /* back_button.png */,
 				C8951AFC1E7D975000CE0A5F /* difficulty_button.png */,
 				C8951B001E7D9C1300CE0A5F /* background.jpg */,
+				8F0147891E8BF0BF0022217C /* hard_button.png */,
+				8F01478A1E8BF0BF0022217C /* medium_button.png */,
+				8F01478B1E8BF0BF0022217C /* Easy_Button.png */,
+				8F01479A1E8C1B700022217C /* background.png */,
+				8F01479D1E8C1B880022217C /* jump.png */,
 				C8951B021E7D9C7900CE0A5F /* africanjgl.caf */,
-				C8951B041E7D9C8900CE0A5F /* rainforest.caf */,
-				C8ED71921E7827170053EB67 /* torch.png */,
 				C85C242C1E7702C000C68997 /* AppDelegate.h */,
 				C85C242D1E7702C000C68997 /* AppDelegate.m */,
 				C85C24331E7702C000C68997 /* GameScene.h */,
@@ -139,18 +158,22 @@
 				C80094B71E7964CE00E12968 /* MLPointLabel.m */,
 				C8ED71961E7835600053EB67 /* Mowgli.h */,
 				C8ED71971E7835600053EB67 /* Mowgli.m */,
+				8F680BF81E850356006C85E7 /* MyTileSet.sks */,
+				8F50F02F1E81C84100879B0A /* ShereKhan.h */,
+				8F50F0301E81C84100879B0A /* ShereKhan.m */,
 				C80094AF1E794DE300E12968 /* MLWorldGenerator.h */,
-				C8DFA9CB1E7C07C00056B9C4 /* LevelMenu.sks */,
 				C80094B01E794DE300E12968 /* MLWorldGenerator.m */,
 				C85C24361E7702C000C68997 /* GameViewController.h */,
 				C85C24371E7702C000C68997 /* GameViewController.m */,
 				C85C24391E7702C000C68997 /* Main.storyboard */,
+				C8DFA9CB1E7C07C00056B9C4 /* LevelMenu.sks */,
 				C8DFA9CD1E7C09320056B9C4 /* LevelScene.h */,
 				C8DFA9CE1E7C09320056B9C4 /* LevelScene.m */,
 				C8A986671E7BFA84005BA02B /* MenuScene.h */,
 				C8A986681E7BFA84005BA02B /* MenuScene.m */,
 				C8DFA9FC1E7C0D730056B9C4 /* ScoreScene.h */,
 				C8DFA9FD1E7C0D730056B9C4 /* ScoreScene.m */,
+				8F01478C1E8BF0BF0022217C /* reset_button.png */,
 				C8DFA9FA1E7C0C470056B9C4 /* ScoresMenu.sks */,
 				C85C243C1E7702C000C68997 /* Assets.xcassets */,
 				C85C243E1E7702C000C68997 /* LaunchScreen.storyboard */,
@@ -235,23 +258,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8ED71951E7827240053EB67 /* green.png in Resources */,
 				C8E41D201E7C2A610000A3AD /* stump.png in Resources */,
 				C8951AFB1E7D974300CE0A5F /* highscore_button.png in Resources */,
-				C8951B051E7D9C8900CE0A5F /* rainforest.caf in Resources */,
 				C8951B011E7D9C1300CE0A5F /* background.jpg in Resources */,
+				8F0147931E8BF0BF0022217C /* reset_button.png in Resources */,
 				C8ED71911E781F0A0053EB67 /* mowgli.atlas in Resources */,
+				8F0147911E8BF0BF0022217C /* medium_button.png in Resources */,
+				8F0147921E8BF0BF0022217C /* Easy_Button.png in Resources */,
 				C8951B031E7D9C7900CE0A5F /* africanjgl.caf in Resources */,
 				C8951AFD1E7D975000CE0A5F /* difficulty_button.png in Resources */,
+				8F680BF91E850356006C85E7 /* MyTileSet.sks in Resources */,
+				8F6312231E81C8F60011C767 /* sherekhan.atlas in Resources */,
+				8F0147991E8C181A0022217C /* ground.png in Resources */,
+				8F01479B1E8C1B700022217C /* background.png in Resources */,
 				C8E41D241E7C2A940000A3AD /* stone.png in Resources */,
+				8F0147901E8BF0BF0022217C /* hard_button.png in Resources */,
 				C8DFA9CC1E7C07C10056B9C4 /* LevelMenu.sks in Resources */,
 				C8951AF91E7D973B00CE0A5F /* back_button.png in Resources */,
 				C8DFA9FB1E7C0C470056B9C4 /* ScoresMenu.sks in Resources */,
-				C89A27331E77F3710087C290 /* mowglirun_spritesheet.png in Resources */,
 				C8951AF71E7D96FB00CE0A5F /* play_button.png in Resources */,
+				8F0147A51E8C64D60022217C /* snake.atlas in Resources */,
 				C85C243B1E7702C000C68997 /* Main.storyboard in Resources */,
 				C85C243D1E7702C000C68997 /* Assets.xcassets in Resources */,
-				C8ED71931E7827170053EB67 /* torch.png in Resources */,
+				8F01479F1E8C1B880022217C /* jump.png in Resources */,
 				C85C24401E7702C000C68997 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +303,7 @@
 				C8ED71981E7835600053EB67 /* Mowgli.m in Sources */,
 				C80094B11E794DE300E12968 /* MLWorldGenerator.m in Sources */,
 				C8DFA9FE1E7C0D730056B9C4 /* ScoreScene.m in Sources */,
+				8F50F0311E81C84100879B0A /* ShereKhan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

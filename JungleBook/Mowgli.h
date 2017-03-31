@@ -14,4 +14,5 @@
 -(void)start;
 -(void)stop;
 -(void)land;
+-(void)crouch;
 @end

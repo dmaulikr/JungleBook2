@@ -28,7 +28,9 @@
     if ([node.name isEqualToString:@"reset"]) {
         GameData *data = [GameData data];
         data.highscore = 0;
-        [data save];
+        data.middleScore =0;
+        data.lowestScore =0;
+        [data deleteAll];
         [self updateScore];
 
     } else if([node.name isEqualToString:@"back"]){
@@ -41,8 +43,12 @@
 -(void)updateScore{
     GameData *data = [GameData data];
     [data load];
-    SKLabelNode *highestScore = (SKLabelNode *)[self childNodeWithName: @"highestScore"];
+    SKLabelNode *highestScore = (SKLabelNode *)[self childNodeWithName: @"highScore"];
     highestScore.text = [NSString stringWithFormat:@"%i", data.highscore];
+    SKLabelNode *secondScore = (SKLabelNode *)[self childNodeWithName:@"secondScore"];
+    secondScore.text = [NSString stringWithFormat:@"%i",data.middleScore];
+    SKLabelNode *thirdScore = (SKLabelNode *)[self childNodeWithName:@"thirdScore"];
+    thirdScore.text = [NSString stringWithFormat:@"%i",(int) data.lowestScore];
 }
 
 

@@ -10,8 +10,14 @@
 
 @interface GameData : NSObject
 @property int highscore;
+@property int lowestScore;
+@property int middleScore;
+@property int newNumber;
+@property BOOL valuesSaved;
+@property NSMutableArray *topScores;
 
 +(id)data;
 -(void)save;
 -(void)load;
+-(void)deleteAll;
 @end

@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface LevelScene : SKScene
-
+extern int Difficulty;
 @end

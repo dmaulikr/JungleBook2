@@ -29,6 +29,7 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    //Vorsorge, wenn die Applikation in den Background tritt, dass man anschließend auch weiterspielen kann
     SKView *view = (SKView *)self.window.rootViewController.view;
     view.paused = YES;
 }
